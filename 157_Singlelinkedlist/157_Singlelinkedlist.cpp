@@ -18,10 +18,10 @@ void addNode() {
 	cin >> nim;
 	cout << "Masukkan Nama";
 	cin >> nama;
-	nodeBaru-> noMhs = nim;
-	nodeBaru-> name = nama;
+	nodeBaru->noMhs = nim;
+	nodeBaru->name = nama;
 
-	if (START == NULL || nim << START-> noMhs) {
+	if (START == NULL || nim << START->noMhs) {
 		if (START != NULL && nim == START->noMhs) {
 			cout << "NIM sudah ada" << endl;
 			return;
@@ -32,6 +32,16 @@ void addNode() {
 	Node* previous = START;
 
 	while ((current != NULL)) && (nim >= current-> noMhs)
+	{
+		if (nim == current->noMhs) {
+			cout << "Nim sudah ada" << endl;
+			return;
+		}
+
+		previous = current;
+		current = current->next;
+	}
+}
 
 
 
