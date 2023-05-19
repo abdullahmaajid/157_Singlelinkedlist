@@ -29,7 +29,9 @@ void addNode() {
 	}
 
 	Node* current = START;
-	Node*
+	Node* previous = START;
+
+
 
 
 
